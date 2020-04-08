@@ -190,23 +190,6 @@
         <stress.skip.pattern>disabled</stress.skip.pattern>
       </properties>
     </profile>
-    <profile>
-      <id>deploy.boundless</id>
-      <distributionManagement>
-        <repository>
-          <id>boundless</id>
-          <uniqueVersion>false</uniqueVersion>
-          <name>Boundless Release Repository</name>
-          <url>https://repo.boundlessgeo.com/release/</url>
-        </repository>
-        <snapshotRepository>
-          <id>boundless</id>
-          <uniqueVersion>false</uniqueVersion>
-          <name>Boundless Snapshot Repository</name>
-          <url>https://repo.boundlessgeo.com/snapshot/</url>
-        </snapshotRepository>
-      </distributionManagement>
-    </profile>
    <profile>
     <id>deploygeosolutions</id>
      <distributionManagement>  
@@ -216,17 +199,17 @@
        <url>ftp://demo.geo-solutions.it</url>
       </repository>
     </distributionManagement>
-   </profile>
-    <profile>
-      <id>site.local</id>
-      <distributionManagement>
-        <site>
-          <id>local</id>
-          <name>Web site for Maven reports</name>
-          <url>file:///${java.io.tmpdir}/gtsite</url>
-        </site>
-      </distributionManagement>
     </profile>
+     <profile>
+       <id>site.local</id>
+       <distributionManagement>
+         <site>
+           <id>local</id>
+           <name>Web site for Maven reports</name>
+           <url>file:///${java.io.tmpdir}/gtsite</url>
+         </site>
+       </distributionManagement>
+     </profile>
 
     <!-- Dependency version checks -->
     <profile>
