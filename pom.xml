@@ -207,6 +207,16 @@
         </snapshotRepository>
       </distributionManagement>
     </profile>
+   <profile>
+    <id>deploygeosolutions</id>
+     <distributionManagement>  
+      <repository>
+       <uniqueVersion>false</uniqueVersion>
+       <id>geosolutions</id>
+       <url>ftp://demo.geo-solutions.it</url>
+      </repository>
+    </distributionManagement>
+   </profile>
     <profile>
       <id>site.local</id>
       <distributionManagement>
@@ -1683,8 +1693,12 @@
         <artifactId>wagon-webdav</artifactId>
         <version>1.0-beta-2</version>
       </extension>
+    <extension>
+     <groupId>org.apache.maven.wagon</groupId>
+     <artifactId>wagon-ftp</artifactId>    
+     <version>1.0-beta-2</version>          
+    </extension>
     </extensions>
-    
    
     <plugins>
     
