@@ -2282,12 +2282,12 @@
       <url>https://repo.osgeo.org/repository/geotools-releases/</url>
       <uniqueVersion>false</uniqueVersion>
     </repository>
-    <snapshotRepository>
+    <!--snapshotRepository>
       <id>nexus</id>
       <uniqueVersion>false</uniqueVersion>
       <name>OSGeo Snapshot Repository</name>
       <url>https://repo.osgeo.org/repository/geotools-snapshots/</url>
-    </snapshotRepository>
+    </snapshotRepository-->
   </distributionManagement>
 
   <!-- ================================================================== -->
